@@ -4,7 +4,8 @@
   "description": "first version of my portfolio",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Peep Noork6iv",
   "license": "ISC",
