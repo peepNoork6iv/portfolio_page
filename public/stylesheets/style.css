@@ -8,6 +8,12 @@ body {
     text-align: center;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 h1,h2,h3 {
     margin: 0;
     padding: 1em 0;
@@ -18,8 +24,10 @@ p {
     padding: 1em 0;
 }
 
+/*header*/
+
 #showcase {
-    min-height: 450px;
+    min-height: 400px;
     color: #eef;
     text-align: center
 }
@@ -38,7 +46,6 @@ p {
 
 #showcase h1 {
     font-weight: 700;
-    font-size: 4em;
 	padding-top: 100px;
 	padding-bottom: 0;
 }
@@ -46,4 +53,34 @@ p {
 #showcase .content-wrap,
 #section-a .content-wrap {
 	padding: 0 1.5em;
+}
+
+#section-a {
+    background: #eaeaed;
+    color: #223;
+}
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    
+    #section-a .content-text {
+        columns: 2;
+        column-cap: 2em;
+        padding-bottom: 20px;
+    }
+    
+    #section-a .content-text p {
+        padding-top: 0;
+    }
+    
+    .content-wrap{
+        grid-column: 2/4;
+    }
+    
+    h1 {
+        font-size: 4em;
+    }
 }
