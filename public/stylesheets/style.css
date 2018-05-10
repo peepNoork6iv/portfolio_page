@@ -24,6 +24,11 @@ p {
     padding: 1em 0;
 }
 
+a {
+    color: #ddf;
+    text-decoration: none;
+}
+
 /*header*/
 
 #showcase {
@@ -58,6 +63,18 @@ p {
 #section-a {
     background: #eaeaed;
     color: #223;
+}
+
+#main-footer{
+    padding: 2em;
+    background: #000;
+    color: #ddf;
+    text-align: center;
+}
+
+#contact{
+    padding-bottom: 2em;
+    background: #5c9dff;
 }
 
 @media(min-width: 700px) {
